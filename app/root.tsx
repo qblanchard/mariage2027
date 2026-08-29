@@ -33,7 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				<header className="site-header"><Link className="site-logo" to="/">M <span>✦</span> M</Link><nav aria-label="Navigation principale"><Link to="/lieu">Le lieu</Link><Link to="/theme">Le thème</Link><Link to="/journee">La journée</Link></nav></header>
+				<header className="site-header"><Link className="site-logo" to="/">Quentin <span>✦</span> Bérengère</Link><nav aria-label="Navigation principale"><Link to="/lieu">Le lieu</Link><Link to="/theme">Le thème</Link><Link to="/journee">La journée</Link></nav></header>
 				{children}
 				<footer className="site-footer">À très vite <span>✦</span> pour célébrer</footer>
 				<ScrollRestoration />
