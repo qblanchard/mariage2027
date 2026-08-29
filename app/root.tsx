@@ -7,6 +7,8 @@ import {
 	ScrollRestoration,
 	Link,
 } from "react-router";
+import { useEffect } from "react";
+import orangeImage from "./Images/Orange.png";
 
 import "./app.css";
 
@@ -23,6 +25,35 @@ export const links = () => [
 	},
 ];
 
+function ParallaxDecor() {
+	useEffect(() => {
+		let animationFrame: number | undefined;
+
+		const updateDecor = () => {
+			const scrollY = window.scrollY;
+			document.documentElement.style.setProperty("--parallax-slow", `${scrollY * -0.055}px`);
+			document.documentElement.style.setProperty("--parallax-medium", `${scrollY * 0.09}px`);
+			animationFrame = undefined;
+		};
+
+		const onScroll = () => {
+			if (animationFrame === undefined) animationFrame = window.requestAnimationFrame(updateDecor);
+		};
+
+		updateDecor();
+		window.addEventListener("scroll", onScroll, { passive: true });
+		return () => {
+			window.removeEventListener("scroll", onScroll);
+			if (animationFrame !== undefined) window.cancelAnimationFrame(animationFrame);
+		};
+	}, []);
+
+	return <div className="parallax-decor" aria-hidden="true">
+		<img className="parallax-fruit parallax-fruit-left" src={orangeImage} alt="" />
+		<img className="parallax-fruit parallax-fruit-right" src={orangeImage} alt="" />
+	</div>;
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="fr">
@@ -33,6 +64,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
+				<ParallaxDecor />
 				<header className="site-header"><Link className="site-logo" to="/">Quentin <span>✦</span> Bérengère</Link><nav aria-label="Navigation principale"><Link to="/lieu">Le lieu</Link><Link to="/theme">Le thème</Link><Link to="/journee">La journée</Link></nav></header>
 				{children}
 				<footer className="site-footer">À très vite <span>✦</span> pour célébrer</footer>
