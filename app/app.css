@@ -278,7 +278,7 @@ address {
 
 .lodging-grid {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
     gap: 25px;
 }
 
@@ -300,6 +300,18 @@ address {
     color: var(--muted);
     line-height: 1.6;
     font-size: 14px;
+}
+
+.lodging-grid .lodging-rating {
+    flex: initial;
+    margin: 0 0 18px;
+    color: var(--orange);
+    font: 500 13px "DM Mono", monospace;
+}
+
+.lodging-rating small {
+    color: var(--muted);
+    font: inherit;
 }
 
 .theme-hero {
