@@ -767,7 +767,7 @@ address {
     width: clamp(190px, 23vw, 370px);
     height: auto;
     mix-blend-mode: screen;
-    filter: drop-shadow(0 22px 19px rgba(81, 55, 24, .25));
+    filter: drop-shadow(0 22px 19px rgba(81, 55, 24, .35));
     will-change: transform;
 }
 
