@@ -342,7 +342,7 @@ address {
 .leaf {
     position: absolute;
     z-index: 1;
-    width: 120px;
+    width: 90px;
     height: 37px;
     background: var(--sage);
     border-radius: 100% 0 100% 0;
