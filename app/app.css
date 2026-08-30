@@ -342,7 +342,7 @@ address {
 .leaf {
     position: absolute;
     z-index: 1;
-    width: 91px;
+    width: 120px;
     height: 37px;
     background: var(--sage);
     border-radius: 100% 0 100% 0;
@@ -767,7 +767,7 @@ address {
     width: clamp(190px, 23vw, 370px);
     height: auto;
     mix-blend-mode: screen;
-    filter: drop-shadow(0 22px 19px rgba(81, 55, 24, .35));
+    filter: drop-shadow(0 22px 19px rgba(81, 55, 24, .5));
     will-change: transform;
 }
 
