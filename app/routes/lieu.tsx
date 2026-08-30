@@ -25,7 +25,7 @@ export default function Lieu() {
                     <time>14h00</time>
                     <h3>La cérémonie</h3><p>Église Notre-Dame de La Roche-sur-Yon</p></article>
                 <article>
-                    <time>À partir de 16h00</time>
+                    <time>À partir de 17h00</time>
                     <h3>La réception</h3><p>L&apos;Étable de Beaupuy, à Mouilleron-le-Captif</p></article>
             </div>
         </section>
