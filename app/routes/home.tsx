@@ -10,7 +10,7 @@ export function meta() {
 export default function Home() {
     return <main className="home-page">
         <section className="hero" aria-labelledby="hero-title"><p className="eyebrow">Nous nous marions</p><h1
-            id="hero-title">L&apos;amour,<br/><em>ensoleillé.</em></h1><p className="hero-date">Le [date] · [ville]</p>
+            id="hero-title">L&apos;amour,<br/><em>ensoleillé.</em></h1><p className="hero-date">Le 14 Août 2027 · La roche sur yon</p>
             <p className="hero-copy">Nous avons hâte de célébrer cette belle journée avec vous.</p>
             <div className="hero-actions"><Link className="button button-primary" to="/journee">Découvrir la
                 journée</Link><Link className="button button-quiet" to="/lieu">Infos pratiques →</Link></div>
