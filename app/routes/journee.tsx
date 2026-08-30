@@ -2,11 +2,13 @@ export function meta() {
     return [{title: "Le déroulé de la journée · Notre mariage"}];
 }
 
-const timeline = [["10h30", "Mariage civil", "On vous attend à la mairie de la Roche sur yon."],
+const timeline =[ //["10h30", "Mariage civil", "Famille et amis proches, on vous attend à la mairie de la Roche sur yon."],
+    //["11h30", "Déjeuner libre", "Le moment que nous avons tant hâte de partager avec vous."],
     ["14h00", "Mariage religieux", "Le moment que nous avons tant hâte de partager avec vous."],
+    ["16h00", "Instants photos de groupe", "Temps dédiés pour capturer le moment en famille et entre amis."],
     ["17h00", "Cocktail ensoleillé", "Bulles, bouchées gourmandes et quelques surprises."],
     ["20h00", "Dîner", "À table pour une soirée pleine de saveurs."],
-    ["22h30", "On ouvre le bal", "Et la fête continue jusqu'au bout de la nuit !"]];
+    ["22h30", "On ouvre le bal", "Et la fête continue jusqu'au bout de la nuit ! (3h)"]];
 
 export default function Journee() {
     return <main className="content-page day-page">
