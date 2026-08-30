@@ -12,10 +12,10 @@ export default function Logement() {
             <p className="lodging-note">Distances routières estimées depuis l&apos;Étable de Beaupuy · Les tarifs sont indicatifs et varient selon la période.</p>
             <div className="lodging-grid">
                 <article><span>01</span><h3>La Grange de la Ménagerie</h3><p>Une première adresse à proximité immédiate
-                    de l&apos;Étable de Beaupuy.</p><div className="lodging-facts"><p><span>Trajet</span>3,6 km · env. 6 min</p><p><span>Budget</span>Dès 238 € / nuit</p></div><a href="https://maps.app.goo.gl/1txgGW6xfFesqT126" target="_blank"
+                    de l&apos;Étable de Beaupuy.</p><div className="lodging-facts"><p><span>Trajet</span>800m · env. 6 min à pieds</p><p><span>Budget</span>Dès 238 € / nuit</p></div><a href="https://maps.app.goo.gl/1txgGW6xfFesqT126" target="_blank"
                                                        rel="noreferrer">Voir sur Google Maps →</a></article>
                 <article><span>02</span><h3>La Petite Ménagerie</h3><p>Une autre option tout près du lieu de
-                    réception.</p><div className="lodging-facts"><p><span>Trajet</span>3,6 km · env. 6 min</p><p><span>Budget</span>Tarif sur demande</p></div><a href="https://maps.app.goo.gl/t33pXo4wBCFPWgTaA" target="_blank" rel="noreferrer">Voir
+                    réception.</p><div className="lodging-facts"><p><span>Trajet</span>800m · env. 6 min  à pieds</p><p><span>Budget</span>Tarif sur demande</p></div><a href="https://maps.app.goo.gl/t33pXo4wBCFPWgTaA" target="_blank" rel="noreferrer">Voir
                     sur Google Maps →</a></article>
                 <article><span>03</span><h3>Gîte de la Balangerie</h3><p>Un gîte situé à quelques minutes de
                     Beaupuy.</p><div className="lodging-facts"><p><span>Trajet</span>3,3 km · env. 5 min</p><p><span>Budget</span>Dès 325 € / nuit</p></div><a href="https://maps.app.goo.gl/zVXCw5XmgbDRYACW7" target="_blank" rel="noreferrer">Voir
