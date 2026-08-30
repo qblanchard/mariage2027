@@ -2,7 +2,7 @@ export function meta() {
     return [{title: "Le déroulé de la journée · Notre mariage"}];
 }
 
-const timeline =[ //["10h30", "Mariage civil", "Famille et amis proches, on vous attend à la mairie de la Roche sur yon."],
+const timeline_14 =[ //["10h30", "Mariage civil", "Famille et amis proches, on vous attend à la mairie de la Roche sur yon."],
     //["11h30", "Déjeuner libre", "Le moment que nous avons tant hâte de partager avec vous."],
     ["14h00", "Mariage religieux", "Le moment que nous avons tant hâte de partager avec vous."],
     ["16h00", "Instants photos de groupe", "Temps dédiés pour capturer le moment en famille et entre amis."],
@@ -10,12 +10,22 @@ const timeline =[ //["10h30", "Mariage civil", "Famille et amis proches, on vous
     ["20h00", "Dîner", "À table pour une soirée pleine de saveurs."],
     ["22h30", "On ouvre le bal", "Et la fête continue jusqu'au bout de la nuit ! (3h)"]];
 
+const timeline_15 =[
+    ["11h30", "Déjeuner tous ensemble"],
+    ["14h30", "On débute le rengement !"]];
+
 export default function Journee() {
     return <main className="content-page day-page">
         <header className="page-hero"><p className="eyebrow">14 Août 2027</p><h1>Une journée<br/><em>à savourer.</em>
         </h1><p>Voici les grandes étapes de cette parenthèse que nous avons imaginée avec beaucoup d&apos;amour.</p>
         </header>
-        <section className="timeline" aria-label="Déroulé de la journée">{timeline.map(([time, title, text]) => <article
+        <section className="timeline" aria-label="Déroulé de la journée">{timeline_14.map(([time, title, text]) => <article
+            key={time}>
+            <time>{time}</time>
+            <span className="timeline-dot"/>
+            <div><h2>{title}</h2><p>{text}</p></div>
+        </article>)}</section>
+        <section className="timeline" aria-label="Déroulé du retour">{timeline_15.map(([time, title, text]) => <article
             key={time}>
             <time>{time}</time>
             <span className="timeline-dot"/>
