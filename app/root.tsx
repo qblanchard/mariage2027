@@ -65,7 +65,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<ParallaxDecor />
-				<header className="site-header"><Link className="site-logo" to="/">Quentin <span>✦</span> Bérengère</Link><nav aria-label="Navigation principale"><Link to="/lieu">Le lieu</Link><Link to="/logement">Les logements</Link><Link to="/theme">Le thème</Link><Link to="/journee">La journée</Link></nav></header>
+				<header className="site-header"><Link className="site-logo" to="/">Quentin <span>✦</span> Bérengère</Link><nav aria-label="Navigation principale"><Link to="/lieu">Le lieu</Link><Link to="/logement">Les logements</Link><Link to="/theme">Le thème</Link><Link to="/le-programme">Le programme</Link></nav></header>
 				{children}
 				<footer className="site-footer">À très vite <span>✦</span> pour célébrer</footer>
 				<ScrollRestoration />
