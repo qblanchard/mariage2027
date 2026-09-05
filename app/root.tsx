@@ -9,6 +9,7 @@ import {
 } from "react-router";
 import { useEffect } from "react";
 import orangeImage from "./Images/Orange.png";
+import leafImage from "./Images/Feuille.png";
 
 import "./app.css";
 
@@ -49,8 +50,12 @@ function ParallaxDecor() {
 	}, []);
 
 	return <div className="parallax-decor" aria-hidden="true">
+		<img className="parallax-leaf parallax-leaf-top-left" src={leafImage} alt="" />
+		<img className="parallax-leaf parallax-leaf-top-right" src={leafImage} alt="" />
 		<img className="parallax-fruit parallax-fruit-left" src={orangeImage} alt="" />
 		<img className="parallax-fruit parallax-fruit-right" src={orangeImage} alt="" />
+		<img className="parallax-leaf parallax-leaf-bottom-left" src={leafImage} alt="" />
+		<img className="parallax-leaf parallax-leaf-bottom-right" src={leafImage} alt="" />
 	</div>;
 }
 
