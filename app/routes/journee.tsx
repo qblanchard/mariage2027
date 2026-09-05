@@ -25,6 +25,9 @@ export default function Journee() {
             <span className="timeline-dot"/>
             <div><h2>{title}</h2><p>{text}</p></div>
         </article>)}</section>
+        <header className="page-hero"><p className="eyebrow">15 Août 2027</p><h1>Le retour<br/><em>.</em>
+        </h1><p>un retour pour toujours plus de plaisir</p>
+        </header>
         <section className="timeline" aria-label="Déroulé du retour">{timeline_15.map(([time, title, text]) => <article
             key={time}>
             <time>{time}</time>
